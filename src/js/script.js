@@ -39,3 +39,8 @@ function render(){
                                                 </div>`;}); 
   document.getElementById("library").innerHTML = bookList;
 }
+
+function removeBook(bookIndex){
+  myLibrary.splice(bookIndex,1);
+  render();
+}
