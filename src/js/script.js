@@ -44,3 +44,9 @@ function removeBook(bookIndex){
   myLibrary.splice(bookIndex,1);
   render();
 }
+
+function changeRead(index){
+  let x = document.getElementsByClassName('book-read')[index];
+  myLibrary[index].read = x.value;
+  render();
+}
