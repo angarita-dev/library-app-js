@@ -16,6 +16,7 @@ function addBookToLibrary() {
   let newBook = new Book(title, author, numPages, read);
   myLibrary.push(newBook);
   alert(newBook.title + " was added successfully !!!");
+  render();
 }
 
 
